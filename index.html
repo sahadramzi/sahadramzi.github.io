@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahad Ramzi — Essays, Articles & Projects</title>
+  <meta name="description" content="Personal portfolio and editorial archive of Sahad Ramzi, hosting long-form essays, technical articles, and design projects.">
+  
+  <!-- Preconnect to Google Fonts for performance optimization -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="main-header">
+    <div class="container">
+      <a href="#" class="site-logo" id="logo">sahadramzi.github.io</a>
+      <nav class="site-nav" id="navigation">
+        <ul>
+          <li><a href="#essays">Essays</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- Hero Area -->
+    <section class="hero" id="hero-section">
+      <div class="container">
+        <div class="readable-measure">
+          <h1 class="hero-title" id="hero-headline">Building spaces for long-term reading & digital resilience.</h1>
+          <p class="hero-bio" id="hero-description">
+            I am <strong class="text-editorial">Sahad Ramzi</strong>, an engineer and writer exploring interfaces, systems, and digital durability. This site houses my long-form thoughts, research essays, and experimental tools.
+          </p>
+          <a href="#essays" class="hero-cta" id="hero-button">Read the Essays</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Essays Feed Section -->
+    <section id="essays" class="essays-section">
+      <div class="container">
+        <h2 id="essays-heading">Essays &amp; Articles</h2>
+        <div class="essays-feed" id="essays-container">
+          
+          <article class="essay-item" id="essay-1">
+            <div class="readable-measure">
+              <div class="essay-meta">
+                <span class="text-meta text-editorial">Design Philosophy</span>
+                <span class="text-meta" style="opacity: 0.5;">—</span>
+                <span class="text-meta" style="opacity: 0.6;">June 18, 2026</span>
+              </div>
+              <a href="#" class="essay-link">
+                <h3 class="essay-title">Designing for the Digital Archive: Typography and Longevity</h3>
+              </a>
+              <p class="essay-excerpt">
+                How we construct reading spaces on the modern web impacts both memory retention and cognitive comfort. An inquiry into type leading, content boundaries, and building interfaces that outlive temporary design trends.
+              </p>
+            </div>
+          </article>
+
+          <article class="essay-item" id="essay-2">
+            <div class="readable-measure">
+              <div class="essay-meta">
+                <span class="text-meta text-editorial">Systems</span>
+                <span class="text-meta" style="opacity: 0.5;">—</span>
+                <span class="text-meta" style="opacity: 0.6;">May 24, 2026</span>
+              </div>
+              <a href="#" class="essay-link">
+                <h3 class="essay-title">Building Resilient Static Systems with Minimal Overhead</h3>
+              </a>
+              <p class="essay-excerpt">
+                Why complex client-side frameworks are often counterproductive for static text platforms. Analyzing the durability, performance profiles, and environmental footprints of zero-build HTML/CSS publishing pipelines.
+              </p>
+            </div>
+          </article>
+
+          <article class="essay-item" id="essay-3">
+            <div class="readable-measure">
+              <div class="essay-meta">
+                <span class="text-meta text-editorial">Interface</span>
+                <span class="text-meta" style="opacity: 0.5;">—</span>
+                <span class="text-meta" style="opacity: 0.6;">April 02, 2026</span>
+              </div>
+              <a href="#" class="essay-link">
+                <h3 class="essay-title">The Eye Strain Epidemic and the Measure of a Paragraph</h3>
+              </a>
+              <p class="essay-excerpt">
+                A quantitative look at horizontal eye tracking across wide viewports. Why limiting line lengths to 650px is not just an aesthetic constraint, but a fundamental requirement for inclusive digital design.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Grid Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 id="projects-heading">Selected Projects</h2>
+        
+        <div class="projects-grid" id="projects-container">
+          
+          <!-- Project 1: Featured (8 columns width) -->
+          <div class="project-card featured" id="project-lexicon">
+            <div class="project-header">
+              <div class="project-tags">
+                <span class="project-tag">TypeScript</span>
+                <span class="project-tag">Markdown</span>
+                <span class="project-tag">Web Accessibility</span>
+              </div>
+              <h3 class="project-title">Lexicon Editor</h3>
+              <p class="project-description">
+                A highly-accessible markdown-first text editor and publishing tool. Features a tailored typographical focus mode and offline-first browser archiving built directly on LocalForage.
+              </p>
+            </div>
+            <div class="project-footer">
+              <span class="text-meta text-editorial">Featured System</span>
+              <a href="#" class="project-link-icon" aria-label="View Lexicon project">↗</a>
+            </div>
+          </div>
+
+          <!-- Project 2: Secondary (4 columns width) -->
+          <div class="project-card secondary" id="project-aero">
+            <div class="project-header">
+              <div class="project-tags">
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">State</span>
+              </div>
+              <h3 class="project-title">Aero</h3>
+              <p class="project-description">
+                A lightweight state manager for static applications. Leverages proxy objects to bind DOM states dynamically at under 800 bytes gzipped.
+              </p>
+            </div>
+            <div class="project-footer">
+              <span class="text-meta text-editorial">Micro Library</span>
+              <a href="#" class="project-link-icon" aria-label="View Aero project">↗</a>
+            </div>
+          </div>
+
+          <!-- Project 3: Half-width (6 columns) -->
+          <div class="project-card half" id="project-graphite">
+            <div class="project-header">
+              <div class="project-tags">
+                <span class="project-tag">Visuals</span>
+                <span class="project-tag">Themes</span>
+              </div>
+              <h3 class="project-title">Graphite Syntax</h3>
+              <p class="project-description">
+                An ultra-low contrast code syntax theme modeled after graphite pencil gradients, built to reduce eye strain during late-night programming sessions.
+              </p>
+            </div>
+            <div class="project-footer">
+              <span class="text-meta text-editorial">Visual Design</span>
+              <a href="#" class="project-link-icon" aria-label="View Graphite theme project">↗</a>
+            </div>
+          </div>
+
+          <!-- Project 4: Half-width (6 columns) -->
+          <div class="project-card half" id="project-monolith">
+            <div class="project-header">
+              <div class="project-tags">
+                <span class="project-tag">Go</span>
+                <span class="project-tag">Archiver</span>
+              </div>
+              <h3 class="project-title">Monolith</h3>
+              <p class="project-description">
+                A self-hosted command line tool to scrape and bundle your personal digital footprint into standard offline-friendly HTML/CSS directories.
+              </p>
+            </div>
+            <div class="project-footer">
+              <span class="text-meta text-editorial">Tooling</span>
+              <a href="#" class="project-link-icon" aria-label="View Monolith project">↗</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section (for layout completeness and reading test) -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 id="about-heading">About</h2>
+        <div class="readable-measure">
+          <p>
+            This portfolio is built on a custom design system focusing on high visual contrast, fast loading profiles, and readable typographical grids. Each color and variable is mapped precisely to support accessible, glare-reduced screen reading.
+          </p>
+          <p>
+            You can find the underlying source code and design tokens on <a href="https://github.com/sahadramzi" class="text-editorial" style="text-decoration: underline;" target="_blank" rel="noopener noreferrer">GitHub</a> or contact me via my email at <strong class="text-editorial">sahad.ramzi@example.com</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" id="main-footer">
+    <div class="container">
+      <div class="footer-copy">
+        &copy; 2026 Sahad Ramzi. Built with raw HTML and CSS.
+      </div>
+      <ul class="footer-links">
+        <li><a href="https://github.com/sahadramzi" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">RSS</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
