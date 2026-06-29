@@ -12,7 +12,7 @@
   --editorial: #BC7A4E;
   --interactive: #86C133;
   --spotlight: #FCFF5C;
-  
+
   /* Opacity variations for depth & borders */
   --border-fine: rgba(34, 34, 34, 0.12);
   --border-active: rgba(34, 34, 34, 0.3);
@@ -22,7 +22,7 @@
   /* Typography System */
   --font-display: 'Bricolage Grotesque', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-body: 'Domine', Georgia, Cambria, "Times New Roman", Times, serif;
-  
+
   /* Reading Limits & Layout */
   --measure-readable: 650px;
   --layout-width: 1040px;
@@ -32,11 +32,12 @@
   --space-1-5x: 12px;
   --space-2x: 16px;
   --space-3x: 24px;
-  
+
   /* Border Radii system */
   --radius-sm: 8px;
   --radius-md: 12px;
-  
+  --radius-lg: 18px;
+
   /* Timing and Transitions */
   --transition-smooth: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -46,6 +47,7 @@
   background-color: var(--spotlight);
   color: var(--anchor);
 }
+
 ::-moz-selection {
   background-color: var(--spotlight);
   color: var(--anchor);
@@ -54,7 +56,9 @@
 /* ==========================================================================
    Base Reset & Global Styles
    ========================================================================== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -78,7 +82,12 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-display);
   color: var(--anchor);
   line-height: 1.15;
@@ -329,10 +338,10 @@ section {
   justify-content: space-between;
   position: relative;
   overflow: hidden;
-  transition: transform var(--transition-smooth), 
-              background-color var(--transition-smooth), 
-              border-color var(--transition-smooth),
-              box-shadow var(--transition-smooth);
+  transition: transform var(--transition-smooth),
+    background-color var(--transition-smooth),
+    border-color var(--transition-smooth),
+    box-shadow var(--transition-smooth);
 }
 
 @media (min-width: 768px) {
@@ -370,19 +379,19 @@ section {
   .project-card.featured {
     grid-column: span 8;
   }
-  
+
   .project-card.secondary {
     grid-column: span 4;
   }
-  
+
   .project-card.half {
     grid-column: span 6;
   }
-  
+
   .project-card.compact {
     grid-column: span 4;
   }
-  
+
   .project-card.wide {
     grid-column: span 8;
   }
@@ -538,7 +547,8 @@ section {
 }
 
 /* Editorial lists */
-.article-body ul, .article-body ol {
+.article-body ul,
+.article-body ol {
   margin-bottom: var(--space-3x);
   padding-left: var(--space-3x);
 }
@@ -595,4 +605,3 @@ section {
   stroke: var(--border-fine);
   stroke-dasharray: 4, 4;
 }
-
